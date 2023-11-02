@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <title>VideoDreamer</title>
+  <link rel="icon" type="image/x-icon" href="static/icons/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/mycss.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.1.0/markdown-it.min.js"></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})
+  </script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">VideoDreamer: Customized Multi-Subject Text-to-Video Generation with Disen-Mix Finetuning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Anonymous</span>
+                <!-- <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span> -->
+                  </div>
+
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+      <div class="container1">
+        <div class="container2">
+          <div class="container3">
+            <div class="container4">
+              <img class="img-in-c4" src="static/first_example/images/example1/pic1.png" alt="example 1 object 1 image 1">
+              <img class="img-in-c4" src="static/first_example/images/example1/pic2.png" alt="example 1 object 1 image 2">
+            </div>
+            <div class="markdown-container">
+              $Subject1:\ A\ S_1^*\ dog$
+            </div>
+            <div class="container4">
+              <img class="img-in-c4" src="static/first_example/images/example1/pic11.png" alt="example 1 object 2 image 1">
+              <img class="img-in-c4" src="static/first_example/images/example1/pic12.png" alt="example 1 object 2 image 2">
+            </div>
+            <div class="markdown-container">
+              $Subject2:\ A\ S_2^*\ cat$
+            </div>
+          </div>
+          <div class="container35">
+            <img class="img-in-c4" src="static/first_example/gifs/01.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              $A\ S_1^*\ dog\ and\ a\ S_2^*\ $
+              $cat\ are\ jumping\ $
+              $over\ a\ river.$
+            </div>
+          </div>
+          <div class="container35">
+            <img class="img-in-c4" src="static/first_example/gifs/02.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ cat\ $
+            $are\ dancing\ on\ the  $
+            $grass,\ waving\ feet.$
+          </div>
+        </div>
+        <div class="container35">
+          <img class="img-in-c4" src="static/first_example/gifs/06.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ $
+            $cat\ are\ lying\ on\ the\ $
+            $sofa\ together$
+          </div>
+        </div>
+        </div>
+        <div class="container2">
+            <div class="container3">
+              <div class="container4">
+                <img class="img-in-c4" src="static/first_example/images/example2/pic13.png" alt="example 1 object 1 image 1">
+                <img class="img-in-c4" src="static/first_example/images/example2/pic14.png" alt="example 1 object 1 image 2">
+              </div>
+              <div class="markdown-container">
+                $Subject1:\ A\ S_1^*\ girl$
+              </div>
+              <div class="container4">
+                <img class="img-in-c4" src="static/first_example/images/example2/pic23.png" alt="example 1 object 2 image 1">
+                <img class="img-in-c4" src="static/first_example/images/example2/pic24.png" alt="example 1 object 2 image 2">
+              </div>
+              <div class="markdown-container">
+                $Subject2:\ A\ S_2^*\ dog$
+              </div>
+            </div>
+            <div class="container35">
+              <img class="img-in-c4" src="static/first_example/gifs/03.gif" alt="example 1 object 1 image 1">
+              <div class="markdown-container">
+                $A\ S_1^*\ girl\ and\ a\ S_2^*\ $
+                $dog\ are\ walking\ under$
+                $ the\ Eiffel\ tower.$
+              </div>
+            </div>
+            <div class="container35">
+              <img class="img-in-c4" src="static/first_example/gifs/04.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              $A\ S_1^*\ girl\ and\ a\ S_2^*\ $
+              $dog\ are\ skiing\ down$
+              $the\ hill\ on\ board.$
+            </div>
+          </div>
+          <div class="container35">
+            <img class="img-in-c4" src="static/first_example/gifs/05.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              $A\ S_1^*\ girl\ and\ a\ S_2^*\ $
+              $dog\ are\ surfing\ $
+              $in\ the\ ocean.$
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div style="max-width: 80%; text-align: center;">
+            Customized multi-subject text-to-video generation results by VideoDreamer. Given multiple subjects and few images for each subject, our VideoDreamer can generate videos that contain the given subjects and simultaneously conform to new text prompts.
+          </div>
+        </div>        
+    </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Customized text-to-video generation aims to generate text-guided videos with customized user-given subjects, which has gained increasing attention recently. However, existing works are primarily limited to generating videos for a single subject, leaving the more challenging problem of customized multi-subject text-to-video generation largely unexplored. In this paper, we fill this gap and propose a novel VideoDreamer framework. VideoDreamer can generate temporally consistent text-guided videos that faithfully preserve the visual features of the given multiple subjects. Specifically, VideoDreamer leverages the pretrained Stable Diffusion with latent-code motion dynamics and temporal cross-frame attention as the base video generator. The video generator is further customized for the given multiple subjects by the proposed Disen-Mix Finetuning and Human-in-the-Loop Re-finetuning strategy, which can tackle the attribute binding problem of multi-subject generation. We also introduce MultiStudioBench, a benchmark for evaluating customized multi-subject text-to-video generation models. Extensive experiments demonstrate the remarkable ability of VideoDreamer to generate videos with new content such as new events and backgrounds, tailored to the customized multiple subjects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework</h2>
+        <div class="container">
+          <img src="static/first_example/images/framework.png" alt="architecture">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            VideoDreamer leverages the Stable Diffusion (Text Encoder and U-Net) as the video generator as shown in the right figure, where the motion dynamics and temporal cross-frame attention are used to maintain temporal consistency among the generated frames. To achieve the multi-subject customization, in the left figure, we design the separate-prompt finetuning for customizing the model with each subject, while the disentangled finetuning for mixed data is designed to avoid the attribute binding problem when generating multiple subjects in the same frame. The extended prompt and the visual encoder are designed to avoid the artificial stitches brought by the mixed data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container1">
+      <h2 class="title is-3">VideoDreamer Generated Examples</h2>
+      <div class="container2">
+        <div style="max-width: 100%; text-align: center;">
+         VideoDreamer can customize different multiple subjects, and generate videos with different events, which could serve as a useful tool for customized multi-subject text-to-video generation.
+        </div>
+      </div>     
+        <div class="container2">
+          <div class="container33">
+              <img class="img-in-c4" src="static/all_examples/images/1.png" alt="example 1 object 1 image 1">
+              <div class="markdown-container">
+                Given subjects
+              </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/11.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ dog\ and\ a\ S_2^*\ cat\ $
+              $are\ sitting\ on\ the\ beach\ $
+            </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/12.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ dog\ and\ a\ S_2^*\ cat\ $
+              $are\ lying\ on\ the\ sofa$
+            </div>
+          </div>
+
+          <div class="container33">
+            <img class="img-in-c4" src="static/all_examples/images/2.png" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              Given subjects
+            </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/21.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ bear\ and\ a\ S_2^*\ bear\ $
+            $are\ dancing\ in\ the\ forest $
+          </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/22.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ bear\ and\ a\ S_2^*\ bear\ are\ $
+            $surfing\ over\ the\ waves$
+          </div>
+        </div>
+        </div>
+
+        <div class="container2">
+          <div class="container33">
+              <img class="img-in-c4" src="static/all_examples/images/3.png" alt="example 1 object 1 image 1">
+              <div class="markdown-container">
+                Given subjects
+              </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/31.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ boy\ and\ a\ S_2^*\ cat\ are\ $
+              $ playing\ the\ guitar $
+            </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/32.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ boy\ and\ a\ S_2^*\ cat $
+              $are\ playing\ chess$
+            </div>
+          </div>
+
+          <div class="container33">
+            <img class="img-in-c4" src="static/all_examples/images/4.png" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              Given subjects
+            </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/41.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ girl\ and\ a\ S_2^*\ girl\ $
+            $are\ sitting\ on\ the\ sofa\ $
+          </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/42.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ girl\ and\ a\ S_2^*\ girl\ are\ $
+            $driving\ a\ car$
+          </div>
+        </div>
+        </div>        
+
+        <div class="container2">
+          <div class="container33">
+              <img class="img-in-c4" src="static/all_examples/images/5.png" alt="example 1 object 1 image 1">
+              <div class="markdown-container">
+                Given subjects
+              </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/51.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ boy\ and\ a\ S_2^*\ boy\ are\ $
+              $ walking\ in\ the\ desert\ $
+            </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/52.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ boy\, and\ a\ S_2^*\ boy\ are $
+              $lying\ on\ the\ sofa$
+            </div>
+          </div>
+
+          <div class="container33">
+            <img class="img-in-c4" src="static/all_examples/images/6.png" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              Given subjects
+            </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/61.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ dog\ $
+            $are\ playing\ the\ guitar $
+          </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/62.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ dog\ are\ $
+            $surfing\ in\ the\ ocean$
+          </div>
+        </div>
+        </div>        
+
+        
+        <div class="container2">
+          <div class="container33">
+              <img class="img-in-c4" src="static/all_examples/images/7.png" alt="example 1 object 1 image 1">
+              <div class="markdown-container">
+                Given subjects
+              </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/71.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ boy,\ a\ S_2^*\ dog,\ and $
+              $a\ S_3^*\ cat\ are\ sitting $
+              $under\ the\ sakura $
+            </div>
+          </div>
+          <div class="container34">
+            <img class="img-in-c4" src="static/all_examples/gifs/72.gif" alt="example 1 object 1 image 1">
+            <div class="markdown-container1">
+              $A\ S_1^*\ boy,\ a\ S_2^*\ dog, $
+              $and\ a\ S_3^*\ cat\ are $
+              $playing\ chess $
+            </div>
+          </div>
+
+          <div class="container33">
+            <img class="img-in-c4" src="static/all_examples/images/8.png" alt="example 1 object 1 image 1">
+            <div class="markdown-container">
+              Given subjects
+            </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/81.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ dog,\ a\ S_2^*\ dog,\ and $
+            $a\ S_3^*\ cat\ are\ sitting\ in  $
+            $the\ kitchen $
+          </div>
+        </div>
+        <div class="container34">
+          <img class="img-in-c4" src="static/all_examples/gifs/82.gif" alt="example 1 object 1 image 1">
+          <div class="markdown-container1">
+            $A\ S_1^*\ dog,\ a\ S_2^*\ dog,\ and $
+            $a\ S_3^*\ cat\ are\ running\ on  $
+            $the\ grass\ with\ sunflowers $
+          </div>
+        </div>
+        </div>        
+ 
+    </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container1">
+      <h2 class="title is-3">Qualitative Comparison with Baselines</h2>
+
+      <div class="container2">
+        <div style="max-width: 100%; text-align: center;">
+        Compared with the baselines, VideoDreamer can better preserve the identity of each subject than the baselines. Additionally, VideoDreamer will introduce no additional artifacts. 
+        </div>
+      </div>   
+
+      <div class="container2" style="width: 100%; margin:0px; padding:0px">
+        <div class="cp-markdown-container" style="width: 19.5%";>
+          &nbsp;
+        </div>
+        <div class="cp-markdown-container" style="width: 49%";>
+          Baselines
+        </div>
+        <div class="cp-markdown-container" style="width: 30.5%";>
+          VideoDreamer
+        </div>
+        <div class="cp-markdown-container" style="width: 1%";>
+          &nbsp;
+        </div>
+      </div>
+
+        <div class="container2" style="max-width: 95%;">
+          <div class="compare-container-i">
+              <img class="img-in-c4" src="static/compare_examples/images/1.png" alt="example 1 object 1 image 1">
+              <div class="markdown-container">
+                Given subjects
+              </div>
+          </div>
+          <div class="right-part">
+            <div class="gif-container">
+              <div class="container37"></div>
+              <div class="container34">
+                <img class="img-in-c4" src="static/compare_examples/gifs/11.gif" alt="example 1 object 1 image 1">
+              </div>
+              <div class="container34">
+                <img class="img-in-c4" src="static/compare_examples/gifs/12.gif" alt="example 1 object 1 image 1">
+              </div>
+              <div class="container34">
+                <img class="img-in-c4" src="static/compare_examples/gifs/13.gif" alt="example 1 object 1 image 1">
+              </div>
+              <div class="container36"></div>
+              <div class="container34">
+                <img class="img-in-c4" src="static/compare_examples/gifs/14.gif" alt="example 1 object 1 image 1">
+              </div>
+           </div>
+           <div class="caption-container">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ dog\ are\ surfing\ in\ the\ sea\ $
+           </div>
+          </div>
+      </div>
+        
+      <div class="container2" style="max-width: 95%;">
+        <div class="compare-container-i">
+          <img class="img-in-c4" src="static/compare_examples/images/1.png" alt="example 1 object 1 image 1">
+          <div class="markdown-container">
+            Given subjects
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="gif-container">
+            <div class="container37"></div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/22.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/21.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/23.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container36"></div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/24.gif" alt="example 1 object 1 image 1">
+            </div>
+          </div>
+          <div class="caption-container">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ dog\ are\ sitting\ in\ the\ forest\ $
+          </div>
+        </div>
+      </div>
+      
+      <div class="container2" style="max-width: 95%;">
+        <div class="compare-container-i">
+          <img class="img-in-c4" src="static/compare_examples/images/2.png" alt="example 1 object 1 image 1">
+          <div class="markdown-container">
+            Given subjects
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="gif-container">
+            <div class="container37"></div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/31.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/32.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/33.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container36"></div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/34.gif" alt="example 1 object 1 image 1">
+            </div>
+          </div>
+          <div class="caption-container">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ cat\ are\ walking\ on\ the\ Great\ Wall $
+          </div>
+        </div>
+      </div>
+      
+      <div class="container2" style="max-width: 95%;">
+        <div class="compare-container-i">
+          <img class="img-in-c4" src="static/compare_examples/images/2.png" alt="example 1 object 1 image 1">
+          <div class="markdown-container">
+            Given subjects
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="gif-container">
+            <div class="container37"></div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/41.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container34">
+              <img class "img-in-c4" src="static/compare_examples/gifs/42.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/43.gif" alt="example 1 object 1 image 1">
+            </div>
+            <div class="container36"></div>
+            <div class="container34">
+              <img class="img-in-c4" src="static/compare_examples/gifs/44.gif" alt="example 1 object 1 image 1">
+            </div>
+          </div>
+          <div class="caption-container">
+            $A\ S_1^*\ dog\ and\ a\ S_2^*\ cat\ are\ lying\ in\ the\ kitchen $
+          </div>
+        </div>
+      </div>
+      
+
+
+        <div class="container2">
+          <div style="max-width: 80%; text-align: center;">
+            
+          </div>
+        </div>        
+    </div>
+</section>
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const markdownContainers = document.querySelectorAll(".markdown-container");
+    
+        markdownContainers.forEach(function (container) {
+          const markdownText = container.textContent.trim();
+          const md = window.markdownit(); // 使用markdown-it库解析Markdown
+          const htmlText = md.render(markdownText);
+          container.innerHTML = htmlText; // 将渲染后的HTML插入回容器
+    
+          // 使用MathJax渲染数学表达式
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, container]);
+        });
+      });
+    </script>
+     -->
+
+     <script>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        },
+        skipStartupTypeset: true // 禁止页面加载时立即渲染
+      });
+    
+      document.addEventListener("DOMContentLoaded", function () {
+        const markdownContainers = document.querySelectorAll(".markdown-container");
+    
+        markdownContainers.forEach(function (container) {
+          const markdownText = container.textContent.trim();
+          const md = window.markdownit(); // 使用markdown-it库解析Markdown
+          const htmlText = md.render(markdownText);
+          container.innerHTML = htmlText; // 将渲染后的HTML插入回容器
+    
+          // 使用MathJax渲染数学表达式
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, container]);
+        });
+      });
+    </script>
+    
+    
+  </body>
+  </html>

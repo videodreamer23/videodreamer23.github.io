@@ -1,0 +1,178 @@
+.container1 {
+  width:auto;
+  height: auto;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container2 {
+  width:auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.container3 {
+  max-width: 23%;
+  width: auto; /* 设置宽度为自适应 */
+  height: auto; /* Allow height to adjust based on content */
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+
+.container33 {
+  max-width: 15%;
+  width: auto; /* 设置宽度为自适应 */
+  height: auto; /* Allow height to adjust based on content */
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+
+.container34 {
+  max-width: 19%;
+  width: auto; /* 设置宽度为自适应 */
+  height: auto; /* Allow height to adjust based on content */
+  color: #fff;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container35 {
+  max-width: 19%;
+  width: auto; /* 设置宽度为自适应 */
+  height: auto; /* Allow height to adjust based on content */
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+
+.container36 {
+  width: 50px;
+  height: auto;
+}
+
+.container37 {
+  width: 0px;
+  height: auto;
+}
+
+.container-caption {
+  width: 100%;
+  text-align: center;
+}
+
+/* .container2-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+} */
+
+.container33 img {
+  max-width: 100%; /* Ensure the image doesn't overflow the container */
+  height: auto;
+}
+
+.container3 img {
+  max-width: 100%; /* Ensure the image doesn't overflow the container */
+  height: auto;
+}
+
+.container3 video{
+  aspect-ratio: 1/1;
+  max-width: 85%; /* Ensure the image doesn't overflow the container */
+}
+
+.container3 p {
+  margin: 5px 0; /* Adjust the margin as needed */
+}
+
+.container4 {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.container4 img {
+  width: auto;
+  height: auto;
+  object-fit: fill;
+  aspect-ratio: 1/1;
+  max-width: 48%; /* Limit the image width to half of the content part */
+  margin: 2px;
+}
+
+.container4 p {
+  margin: 0 10px; /* Adjust the margin as needed for text spacing */
+  text-align: center; /* Center-align the text */
+}
+
+.markdown-container{
+  font-size: 15px;
+  text-align: center;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #000;
+}
+
+.cp-markdown-container{
+  font-size: 23px;
+  text-align: center;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #000;
+}
+
+.markdown-container1{
+  font-size: 12px;
+  text-align: center;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #000;
+}
+
+.compare-container-i {
+  max-width: 25%;
+  width: 350px; /* 设置宽度为自适应 */
+  height: auto; /* Allow height to adjust based on content */
+  color: #fff;
+  text-align: center;
+  margin: 4px;
+}
+
+.compare-markdown-container{
+  font-size: 12px;
+  text-align: center;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #000;
+}
+
+
+
+.gif-container {
+  display: flex;
+  flex-direction: row; /* 水平排列 */
+  align-items: center; /* 垂直居中内容 */
+  justify-content: center; /* 水平居中内容 */
+  text-align: center; /* 文本内容水平居中 */
+}
+
+.caption-container {
+  width: 100%;
+  text-align: center;
+  font-size:14px;
+}
+
+
